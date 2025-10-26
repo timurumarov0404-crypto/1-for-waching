@@ -8,6 +8,11 @@ body {
   font-family: 'Raleway', sans-serif;
   color: #213053;
   margin: 0 ;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 .header__logo {
   height: 65px;
@@ -182,6 +187,7 @@ padding-bottom: 15px;
     height: 280px;
   }
 }
+
 
 
 
