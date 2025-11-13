@@ -1,18 +1,18 @@
-.container { display: flex ;
+  .container { display: flex ; 
  justify-content:space-between;
   align-items:flex-start;
   padding: 20px;
+}
+.features{
+  background-color: #fff;
+  padding: 115px 60px;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
   color: #213053;
-  margin: 0 ;
-  overflow-x: hidden;
-}
-
-html {
-  overflow-x: hidden;
+  margin: 0;
+   overflow-x: hidden;
 }
 .header__logo {
   height: 65px;
@@ -86,6 +86,7 @@ transition: background-color 0.5s ease-in;
   background: url('https://avatars.mds.yandex.net/i?id=4003223c6b525675372f01ff32e50c1bc31d4df3-3723127-images-thumbs&n=13') no-repeat;
   background-position: center;
   background-size: cover;
+   flex-shrink: 0.5 ;
 }
 .form__container {
   width: 550px;
@@ -174,20 +175,183 @@ padding-bottom:  30px;
 .footer__links a{
 padding-bottom: 15px;
 }
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+}
+.card__logo{
+  width: 100px;
+  height: 100px;
+  font-size: 32px;
+  font-weight: 700px;
+  color: #eaeff9;
+   border-radius: 50%; 
+   display: flex ;
+   align-items: center;
+   justify-content: center;
+background-color: #eaeff9;
+}
+.card_logo1{
+  color: #ffb406;
+}
+.card_logo2{
+  color: #ad1714;
+}
+.card_logo3{
+  color: #22a030;
+}
+.card{
+  border-width: 1px;
+  padding: 35px 40px 25px 40px;
+  border-color: #D9E4E6 ;
+  border-radius: 5px;
+   border-style: solid;
+}
+.features__border{ 
+ margin-top:50px;
+ margin-bottom:50px;
+ border-width:1px ;
+ border-color:#E6EAF4 ;
+ border-style: solid;
+}
+.features__feedback{
+  display: flex;
+}
+.fa-star{color:#ff7039 ;}
+.features__rate-box{
+  background-color: #1D263A;
+  text-shadow: rgb(29 38 58 / 20%) 6px 0px 0 ;
+   
+ 
+}
+.features__savings-box{
+  background-color: #dc5e26;
+  text-shadow: rgb(221 95 38 / 20%) 6px 0px 0 ;
+   margin-right: 30px;
+  
+ 
+}
+.features__feedback-right{
+  display: flex;
+ align-items: center;
+}
+.features__feedback-left{
+  padding-right: 10px;
+  flex-direction: column;
+}
+.features__feedback-left h2{
+  font-size:  48px;
+}
+.features__feedback-left p{
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+.features__box h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+.features__box{
+  padding:30px 40px 25px 40px ;
+  color: #fff;
+  border-radius: 25px;
+}
+.card h3 {
+ font-size:16px ;
+ line-height: 22px;
+ opacity: 0.8; 
+}
+.promo__image {
+  background-image: url('https://img.freepik.com/premium-photo/worker-cleaning-solar-panels-after-installation-outdoors_255667-35523.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  min-height: 500px;
+}
+.promo{
+  display: flex;
+  margin-top: 20px;
+}
+.card__section{margin-top: 10px;margin-left: 10px;}
+section .cards {
+  margin-top: 45px;
+}
+.promo__right{ 
+ background-color:  #dd5f26;
+ padding: 160px 60px;
+ width: 50%;
+ box-sizing: border-box;
+}
+.promo__card{
+  padding : 30px 40px;
+  line-height :  22px; 
+  font-size : 20px;
+  font-weight : 500;
+  border-radius : 25px;
+  background-color: #fff;
+}
+.promo__button{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px ;
+  padding-top:  15px 30px ;
+  font-size: 18px;
+  font-weight: 600;
+}
+.promo__button i {
+  font-size: 15px;
+  margin-left: 5px;
+}
+.promo__card p{
+    color: rgba(0,0, 0, 0.5);}
+.promo__card p::before{
+   content: "";
+  display: inline-block;
+  width: 10px; 
+  height: 10px; 
+  border-radius: 50%;
+  background-color: #ec6b29;
+  margin-right: 10px;
+}
 @media (max-width: 720px) {
   body{
     padding: 10px 50px;
     font-size: 36px;
     line-height: 40px;
   }
+  .features__feedback-right{
+  flex-direction: column;
+  align-items: none;
+}
+  .features__feedback-left h2{
+    font-size: 36px; 
+}
+
+.features__box h3 {
+  font-size: 36px;}
+  .features__feedback-left{
+  flex-direction: column;
+}
+  .features{
+  padding:  50px 10px;
+}
+.cards{
+  grid-template-columns: auto
+}
   .header__logo{
     height: 20;
   }
   .about__sun-image{
     height: 280px;
   }
+  .promo__image{
+    flex-shrink:500px;
+    flex-direction: column;
+  }
+  .promo__right{ 
+ padding: 160px 60px;
 }
-
-
-
-
+}
