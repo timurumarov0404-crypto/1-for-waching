@@ -316,42 +316,239 @@ section .cards {
   background-color: #ec6b29;
   margin-right: 10px;
 }
-@media (max-width: 720px) {
-  body{
-    padding: 10px 50px;
+@media (max-width: 1024px) {
+  .about h1 {
+    font-size: 50px;
+    line-height: 56px;
+  }  
+  .about__images img {
+    width: 400px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .features__feedback-left h2 {
     font-size: 36px;
-    line-height: 40px;
   }
-  .features__feedback-right{
-  flex-direction: column;
-  align-items: none;
-}
-  .features__feedback-left h2{
-    font-size: 36px; 
-}
-
-.features__box h3 {
-  font-size: 36px;}
-  .features__feedback-left{
-  flex-direction: column;
-}
-  .features{
-  padding:  50px 10px;
-}
-.cards{
-  grid-template-columns: auto
-}
-  .header__logo{
-    height: 20;
+  .features__box h3 {
+    font-size: 36px;
   }
-  .about__sun-image{
-    height: 280px;
+  .features {
+    padding: 80px 40px;
   }
-  .promo__image{
-    flex-shrink:500px;
+  .promo__right {
+    padding: 120px 40px;
+  }
+}
+@media (max-width: 740px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  .header__logo {
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  header {
+    height: auto;
+    padding: 15px 0;
+  }
+  header a {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .about h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .about p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .about__images img {
+    width: 100%;
+    max-width: 350px;
+    padding-top: 30px;
+  }
+  .about__info {
+    max-width: 100%;
+    padding: 0;
+  }
+  .about button {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 40px 0;
+  }
+  .card {
+    padding: 30px 25px;
+  }
+  .card__logo {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+  }
+  .features {
+    padding: 60px 25px;
+  }
+  .features__feedback {
     flex-direction: column;
   }
-  .promo__right{ 
- padding: 160px 60px;
+  .features__feedback-left,
+  .features__feedback-right {
+    width: 100%;
+    padding: 0;
+  }
+  .features__feedback-left h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .features__feedback-left p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+  }
+  .features__feedback-right {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .features__box {
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  .features__box h3 {
+    font-size: 32px;
+  }
+  .features__savings-box {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .features__border {
+    margin: 40px 0;
+  }
+  .promo {
+    flex-direction: column;
+    margin: 40px 0;
+  }
+  
+  .promo__image {
+    width: 100%;
+    min-height: 300px;
+    order: 2;
+  }
+  .promo__right {
+    width: 100%;
+    padding: 50px 30px;
+  }
+  .promo__card {
+    padding: 30px 25px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .promo__button {
+    margin-top: 25px;
+  }
+  .form {
+    padding: 70px 25px;
+  }
+  
+  .form__container {
+    width: 100%;
+  }
+  .form h1 {
+    font-size: 32px;
+  }
+  .form p {
+    font-size: 16px;
+  }
+  .form input,
+  select {
+    font-size: 16px;
+    height: 50px;
+  }
+  .form__submit {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+  }
+  footer {
+    padding: 60px 25px;
+  }
+  .footer__container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__group {
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+  .footer__group:last-child {
+    margin-bottom: 0;
+  }
+  .footer__group h3 {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+  .footer__links a {
+    font-size: 14px;
+    padding-bottom: 10px;
+  } 
+  .footer__copyright {
+    margin-top: 30px;
+    font-size: 14px;
+  }
 }
-}
+@media (max-width: 480px) {
+  body {
+    padding: 0 15px;
+  }
+  .about h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .about__images img {
+    max-width: 280px;
+  }
+  .card__logo{
+    font-size: 30px;
+  }
+  .card {
+    padding: 25px 20px;
+  }
+  .features__box h3 {
+    font-size: 28px;
+  }
+  .form h1 {
+    font-size: 28px;
+  }
+  .form {
+    padding: 50px 20px;
+  }
+  button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+  header a {
+    font-size: 13px;
+    margin-right: 10px;
+  }
+  .promo__right {
+    padding: 40px 25px;
+  }
+  .promo__card {
+    padding: 25px 20px;
+  }}
