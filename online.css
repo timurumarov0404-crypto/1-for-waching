@@ -317,6 +317,9 @@ section .cards {
   margin-right: 10px;
 }
 @media (max-width: 1024px) {
+  body{
+    overflow-x: hidden;
+  }
   .about h1 {
     font-size: 50px;
     line-height: 56px;
@@ -343,6 +346,9 @@ section .cards {
   }
 }
 @media (max-width: 740px) {
+  body{
+    overflow-x: hidden;
+  }
   .container {
     flex-direction: column;
     align-items: center;
@@ -552,3 +558,4 @@ section .cards {
   .promo__card {
     padding: 25px 20px;
   }}
+
