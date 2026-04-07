@@ -559,6 +559,8 @@ section .cards {
   .promo__card {
     padding: 25px 20px;
   }}
-
+.form__other-input{
+    margin-top: 20px;
+  }
 
 
